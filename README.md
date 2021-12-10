@@ -4,8 +4,8 @@
 ## 官方文档
 >https://docs.docker.com/
 
-## 
-
+## Docker最新超详细版教程通俗易懂
+>https://www.bilibili.com/video/BV1og4y1q7M4
 
 
 # python 机器学习环境
