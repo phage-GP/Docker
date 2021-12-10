@@ -10,7 +10,7 @@
 
 # python 机器学习环境
 
-'''bash
+```
 ## 本地新建目录，作为docker项目环境根目录
 mkdir /home/docker/python-docker
 cd /home/docker/python-docker
@@ -22,11 +22,11 @@ pip3 freeze >> requirements.txt
 # python 脚本
 touch app.py
 
-'''
+```
 
 ## 生成Dockerfile
 
-'''bash
+```bash
 
 # syntax=docker/dockerfile:1
 FROM python:3.8-slim-buster
@@ -46,16 +46,16 @@ COPY . .
 # 当我们的映像在容器内执行时，我们要运行什么命令。
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
-'''
+```
 
 ## 目录结构
 
-'''
+```
 python-docker
 |____ app.py
 |____ requirements.txt
 |____ Dockerfile
-'''
+```
 
 ## build image
 
@@ -64,7 +64,7 @@ python-docker
 
 ## run iamge
 
-'''
+```
 # -d 后台；-p 外部端口：容器端口，--name 运行别称
 docker run -d -p 5000:5000 --name ml_app python-docker
-'''
+```
